@@ -21,7 +21,7 @@ class SearchTodo extends Component {
     e.preventDefault();
     Axios({
       method: "GET",
-      url: "http://localhost:8080/get/serachitem",
+      url: "http://localhost:8080/get/searchitem",
       headers: {
         "Content-Type": "application/json"
       },
@@ -33,7 +33,7 @@ class SearchTodo extends Component {
         tmpdata: JSON.stringify(res.data),
       })
     })
-    
+    console.log("eh")
   };
   
   render() {
